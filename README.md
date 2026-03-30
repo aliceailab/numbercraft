@@ -2,6 +2,8 @@
 
 A Minecraft-style voxel FPS prototype where shooting mechanics are driven by number theory.
 
+Live demo: https://aliceailab.github.io/numbercraft/
+
 ## Features
 
 - Voxel terrain with a central safe zone and lava hazard area
@@ -38,7 +40,6 @@ Then open the local Vite URL in your browser.
 
 - Prime enemies are destroyed by the standard weapon.
 - Composite enemies store a remaining value that shrinks only under valid factor shots.
-- Zone damage is gated by congruence rules such as `n ≡ 1 (mod 4)`.
 - There are no modular-zone restrictions. Combat depends on the current enemy number logic.
 - The boss shield requires `gcd(weapon, bossNumber)` to match a target.
 - The boss core collapses only once the LCM of successful factor rounds reaches a target value.
